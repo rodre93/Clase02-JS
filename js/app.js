@@ -23,11 +23,15 @@ let myAge = parseInt(prompt("Ingrese su edad"))
 
 
 // Ojo si comparan Strings
-if (myAge < 18 ){
+if (myAge <= 18 ){
     alert("Sos menor de edad");
 }
-else {
-    alert("Sos mayor de edad")
+else if(myAge < 30) {
+    alert("Sos mayor de edad");
+} else if(myAge > 60) {
+    alert("Grupo de riesgo");
+} else {
+    alert("Vos tenes " + myAge);
 }
-
+    
 //fdss
